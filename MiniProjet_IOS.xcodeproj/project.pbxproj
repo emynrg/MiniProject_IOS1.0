@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		725024FF29C60B9C009C3039 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725024FE29C60B9C009C3039 /* WelcomePage.swift */; };
+		7250250129C61EB2009C3039 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250250029C61EB2009C3039 /* LoginPage.swift */; };
 		727975C129C5258700BCFE72 /* MiniProjet_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727975C029C5258700BCFE72 /* MiniProjet_IOSApp.swift */; };
 		727975C329C5258700BCFE72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727975C229C5258700BCFE72 /* ContentView.swift */; };
 		727975C529C5258800BCFE72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727975C429C5258800BCFE72 /* Assets.xcassets */; };
 		727975C829C5258800BCFE72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727975C729C5258800BCFE72 /* Preview Assets.xcassets */; };
+		727975CF29C526AF00BCFE72 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727975CE29C526AF00BCFE72 /* SplashScreenView.swift */; };
+		728B340329C75AA400667DDF /* SignInPage .swift in Sources */ = {isa = PBXBuildFile; fileRef = 728B340229C75AA400667DDF /* SignInPage .swift */; };
+		72D2BFBC29C782BA00D584AC /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D2BFBB29C782BA00D584AC /* HomePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		725024FE29C60B9C009C3039 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
+		7250250029C61EB2009C3039 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		727975BD29C5258700BCFE72 /* MiniProjet_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniProjet_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		727975C029C5258700BCFE72 /* MiniProjet_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniProjet_IOSApp.swift; sourceTree = "<group>"; };
 		727975C229C5258700BCFE72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		727975C429C5258800BCFE72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		727975C729C5258800BCFE72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		727975CE29C526AF00BCFE72 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		728B340229C75AA400667DDF /* SignInPage .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInPage .swift"; sourceTree = "<group>"; };
+		72D2BFBB29C782BA00D584AC /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		725024FB29C60AD3009C3039 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		725024FC29C60AF4009C3039 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				727975C029C5258700BCFE72 /* MiniProjet_IOSApp.swift */,
+				727975C229C5258700BCFE72 /* ContentView.swift */,
+				727975CE29C526AF00BCFE72 /* SplashScreenView.swift */,
+				7250250029C61EB2009C3039 /* LoginPage.swift */,
+				725024FE29C60B9C009C3039 /* WelcomePage.swift */,
+				728B340229C75AA400667DDF /* SignInPage .swift */,
+				72D2BFBB29C782BA00D584AC /* HomePage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		725024FD29C60B04009C3039 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		727975B429C5258700BCFE72 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +89,9 @@
 		727975BF29C5258700BCFE72 /* MiniProjet_IOS */ = {
 			isa = PBXGroup;
 			children = (
-				727975C029C5258700BCFE72 /* MiniProjet_IOSApp.swift */,
-				727975C229C5258700BCFE72 /* ContentView.swift */,
+				725024FD29C60B04009C3039 /* ViewModels */,
+				725024FC29C60AF4009C3039 /* Views */,
+				725024FB29C60AD3009C3039 /* Model */,
 				727975C429C5258800BCFE72 /* Assets.xcassets */,
 				727975C629C5258800BCFE72 /* Preview Content */,
 			);
@@ -138,7 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				727975C329C5258700BCFE72 /* ContentView.swift in Sources */,
+				728B340329C75AA400667DDF /* SignInPage .swift in Sources */,
+				725024FF29C60B9C009C3039 /* WelcomePage.swift in Sources */,
 				727975C129C5258700BCFE72 /* MiniProjet_IOSApp.swift in Sources */,
+				7250250129C61EB2009C3039 /* LoginPage.swift in Sources */,
+				72D2BFBC29C782BA00D584AC /* HomePage.swift in Sources */,
+				727975CF29C526AF00BCFE72 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
